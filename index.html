@@ -374,6 +374,62 @@ src="https://www.facebook.com/tr?id=264800457918824&ev=PageView&noscript=1"/></n
     font-variant-numeric:tabular-nums;
   }
 
+  /* CIÊNCIA */
+  .study-list{display:flex;flex-direction:column;gap:14px;margin-top:8px}
+  .study{
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:12px;
+    padding:18px 20px;
+  }
+  .study .study-topic{
+    font-size:11px;
+    font-weight:800;
+    letter-spacing:1.1px;
+    text-transform:uppercase;
+    color:var(--accent);
+    margin-bottom:9px;
+  }
+  .study p{font-size:15px;color:var(--muted);line-height:1.6;margin-bottom:14px}
+  .study p b{color:var(--text);font-weight:600}
+  .study .cite{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    flex-wrap:wrap;
+    font-size:12.5px;
+    color:var(--muted-2);
+    border-top:1px solid var(--border);
+    padding-top:13px;
+  }
+  .study .cite .badge{
+    font-size:10px;
+    font-weight:800;
+    letter-spacing:.6px;
+    text-transform:uppercase;
+    color:var(--success);
+    background:var(--success-soft);
+    border:1px solid var(--success-border);
+    padding:2px 7px;
+    border-radius:5px;
+    flex-shrink:0;
+  }
+  .study .cite .src{flex:1;min-width:0}
+  .study .cite a{
+    color:var(--accent);
+    font-weight:700;
+    border-bottom:1px solid rgba(168,85,247,.4);
+    white-space:nowrap;
+  }
+  .study .cite a:hover{border-bottom-color:var(--accent)}
+  .ciencia-note{
+    margin-top:16px;
+    font-size:14.5px;
+    color:var(--muted);
+    line-height:1.65;
+  }
+  .ciencia-note b{color:var(--text);font-weight:600}
+
   /* REVELAÇÃO */
   .reveal{
     margin-top:56px;
@@ -546,6 +602,7 @@ src="https://www.facebook.com/tr?id=264800457918824&ev=PageView&noscript=1"/></n
           <li><a href="#rir"><span class="num">03</span>O que é RIR</a></li>
           <li><a href="#calc"><span class="num">04</span>Calcule a sua agora</a></li>
           <li><a href="#aplicar"><span class="num">05</span>Como usar a partir de segunda</a></li>
+          <li><a href="#ciencia"><span class="num">06</span>O que diz a ciência</a></li>
         </ol>
       </nav>
     </header>
@@ -634,6 +691,70 @@ src="https://www.facebook.com/tr?id=264800457918824&ev=PageView&noscript=1"/></n
           <li>Se a tonelagem sobe semana a semana com o RIR sob controle, você está progredindo de verdade. Se travou por 2 ou 3 semanas, é hora de ajustar o treino.</li>
         </ol>
       </div>
+    </section>
+
+    <!-- CIÊNCIA -->
+    <section id="ciencia">
+      <h2>O que diz a ciência</h2>
+      <p>
+        Isso não é achismo. Tonelagem e RIR são as duas variáveis que a pesquisa mais liga ao ganho de músculo. Os estudos abaixo são reais, revisados por pares, e cada um está linkado pra você conferir na fonte.
+      </p>
+
+      <div class="study-list">
+
+        <div class="study">
+          <div class="study-topic">Volume gera músculo</div>
+          <p>
+            Uma revisão que juntou 15 estudos encontrou uma <b>relação direta entre volume de treino e hipertrofia</b>: quanto mais séries por semana, mais músculo, com o resultado quase máximo aparecendo perto de 10 ou mais séries semanais por grupo muscular. Tonelagem é justamente como você acompanha esse volume na prática.
+          </p>
+          <div class="cite">
+            <span class="badge">Meta-análise</span>
+            <span class="src">Schoenfeld, Ogborn &amp; Krieger (2017). <i>Journal of Sports Sciences</i>.</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/27433992/" target="_blank" rel="noopener">Ver estudo →</a>
+          </div>
+        </div>
+
+        <div class="study">
+          <div class="study-topic">Mais séries, mais resultado</div>
+          <p>
+            Fazer <b>mais de uma série por exercício gerou cerca de 40% mais hipertrofia</b> do que uma série só, tanto em iniciantes quanto em treinados. Aumentar o volume (dentro do que você recupera) é dos jeitos mais confiáveis de crescer, e é o que a tonelagem mede.
+          </p>
+          <div class="cite">
+            <span class="badge">Meta-análise</span>
+            <span class="src">Krieger (2010). <i>Journal of Strength and Conditioning Research</i>.</span>
+            <a href="https://journals.lww.com/nsca-jscr/fulltext/2010/04000/single_vs__multiple_sets_of_resistance_exercise.36.aspx" target="_blank" rel="noopener">Ver estudo →</a>
+          </div>
+        </div>
+
+        <div class="study">
+          <div class="study-topic">RIR é medida validada</div>
+          <p>
+            O RIR não é chute. Essa <b>escala foi validada cientificamente</b> como forma de medir o esforço de cada série e ajustar a carga ao seu dia. É exatamente o que você anota na calculadora pra não treinar leve demais nem queimar na falha toda hora.
+          </p>
+          <div class="cite">
+            <span class="badge">Estudo de validação</span>
+            <span class="src">Zourdos et al. (2016). <i>Journal of Strength and Conditioning Research</i>.</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/26049792/" target="_blank" rel="noopener">Ver estudo →</a>
+          </div>
+        </div>
+
+        <div class="study">
+          <div class="study-topic">Não precisa ir à falha sempre</div>
+          <p>
+            Treinar perto da falha estimula o crescimento, mas essa meta-análise mostrou que <b>não é preciso ir à falha total em toda série pra crescer</b> — a vantagem de ir até a falha é pequena. Por isso a zona de RIR 1 a 2: perto o suficiente pra crescer, longe o suficiente pra recuperar e repetir na semana seguinte.
+          </p>
+          <div class="cite">
+            <span class="badge">Meta-análise</span>
+            <span class="src">Refalo et al. (2023). <i>Sports Medicine</i>.</span>
+            <a href="https://link.springer.com/article/10.1007/s40279-022-01784-y" target="_blank" rel="noopener">Ver estudo →</a>
+          </div>
+        </div>
+
+      </div>
+
+      <p class="ciencia-note">
+        Resumindo: a ciência aponta o <b>volume (a tua tonelagem)</b> como o maior motor do crescimento, e o <b>RIR</b> como a forma de controlar o esforço pra crescer sem se queimar. Medir os dois é treinar com base em evidência, não no feeling.
+      </p>
     </section>
 
     <!-- OFFER: CONSULTORIA -->
